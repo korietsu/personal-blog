@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.profile {
+  position: relative
+}
+.profile-photo {
+    border-radius: 4px 4px 0 0;
+}
+ul, ol {
+  list-style: none;
+}
+#accordion1 li.panel{
+    margin-bottom: 0px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #337ab7;
+}

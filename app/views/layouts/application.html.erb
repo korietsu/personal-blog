@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Workspace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Harold Kimball</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <%= csrf_meta_tags %>
+    
+  </head>
 
-<%= yield %>
+  <body>
+    <div class="row">
+      <div class="col-md-3 profile">
+          <ul class="nav nav-pills nav-stacked">
+            <li><img class="img-responsive profile-photo" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/14720465_10154653832458384_3219194771406626124_n.jpg?oh=009357092b41280fa79bf272fad49e3d&oe=58D86EC1" alt="Harold Kimball"></li>
+            <li role="presentation"><a href="#">Home</a></li>
+            <li role="presentation"><a href="about">About Me</a></li>
+            <li role="presentation"><a href="portfolio">Portfolio</a></li>
+            <li role="presentation"><a href="blog">All Posts</a></li>
+            <li role="presentation"><a href="music">Music</a></li>
+          </ul>
+      </div>
+      <div class ="col-md-9 col-md-offest-3">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
 
-</body>
 </html>
